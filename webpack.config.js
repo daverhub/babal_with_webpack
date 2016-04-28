@@ -13,6 +13,11 @@ module.exports = {
       {
         test: /\.scss$/,
         loaders: ["style", "css", "sass"]
+      },
+      {
+        test: /\.jsx?$/,
+        exclude: /node_modules/,
+        loader: "babel"
       }
     ]
   },
@@ -25,4 +30,4 @@ module.exports = {
     inline: true,
     hot: true
   }
-}
+};
